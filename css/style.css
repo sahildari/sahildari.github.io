@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 13px 23px;
+    text-decoration: none;
+    font-family: 'Patua One', cursive;
+}
+
+#navbar ul li a:hover{
+    color: orangered;
+}
+
+#home{
+    display: flex;
+    padding: 5px 250px;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Ubuntu', sans-serif;
+
+}
+
+#home p a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#contact{
+    padding: 12px 25px;
+    margin: 10px;
+}
+
+#contact ul li a{
+    color: black;
+    display: inline-block;
+    padding: 13px 23px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+#contact ul li a:hover{
+    color: orangered;
+}
+
+.paragraph{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    padding: 12px 0px;
+}
+
+.h1-primary{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+.content{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+div li a{
+    text-decoration: none;
+    color: black;
+}
